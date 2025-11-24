@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI C++ Tutor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css"> 
+</head>
+<body>
+    <header>
+        <h1>Gia Sư C++ AI</h1>
+        <p>Học lập trình C++ từ cơ bản đến nâng cao với sự trợ giúp của AI.</p>
+    </header>
+    
+    <main id="app-container">
+        <section id="input-section">
+            <h2>Bạn muốn học gì hôm nay?</h2>
+            
+            <label for="topic-level">Chọn Cấp Độ:</label>
+            <select id="topic-level">
+                <option value="basic">Cơ bản (Biến, Kiểu dữ liệu, Lệnh in)</option>
+                <option value="intermediate">Trung cấp (Hàm, Mảng, Con trỏ)</option>
+                <option value="advanced">Nâng cao (OOP, Đa hình, Thừa kế)</option>
+            </select>
+            
+            <label for="user-prompt">Câu Hỏi / Chủ Đề:</label>
+            <textarea id="user-prompt" placeholder="Nhập câu hỏi, chủ đề C++ cụ thể hoặc yêu cầu bài tập của bạn..."></textarea>
+            
+            <button id="send-button">Hỏi Gia Sư AI</button>
+        </section>
+
+        <section id="output-section">
+            <h2>Bài Giảng / Lời Giải (AI Response)</h2>
+            <div id="ai-response-area">
+                <p class="placeholder">Kết quả sẽ hiển thị ở đây sau khi bạn gửi câu hỏi.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 C++ AI Tutor</p>
+    </footer>
+
+    <script src="https://unpkg.com/@google/genai@0.14.0/dist/browser.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

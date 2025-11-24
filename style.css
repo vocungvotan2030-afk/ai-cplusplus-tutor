@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #005f99; /* Màu xanh C++ */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#app-container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#input-section, #output-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fcfcfc;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#topic-level, #user-prompt {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#user-prompt {
+    height: 120px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+#send-button {
+    width: 100%;
+    background-color: #007acc; /* Màu xanh Visual Studio Code */
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 4px;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+#send-button:hover:not(:disabled) {
+    background-color: #005f99;
+}
+
+#send-button:disabled {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#ai-response-area {
+    min-height: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    border-radius: 6px;
+}
+
+#ai-response-area pre {
+    /* Đảm bảo khối code hiển thị đẹp với highlight.js */
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.placeholder {
+    color: #999;
+    font-style: italic;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
